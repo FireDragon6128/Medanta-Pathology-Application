@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <TextView
+        android:id="@+id/NameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:textColor="#1F2232"
+        android:paddingLeft="18dp"
+        android:textSize="16dp"
+
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NameTextView"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/PriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#596475"
+        android:textSize="16dp"
+        android:paddingLeft="16dp"/>
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:clickable="false"
+        android:layout_alignParentRight="true"
+        android:paddingRight="16dp"
+        android:textColor="#596475"
+        android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

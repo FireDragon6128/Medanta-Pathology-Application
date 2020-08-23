@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="70dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/pacakge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:text="Packages"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/seeAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/viewPagerHome"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:text="See all"
+        android:textAllCaps="true"
+        android:textColor="#67B2F3"
+        android:textSize="10sp" />
+
+    <info.androidhive.bottomnavigation.AutoScrollViewPager
+        android:id="@+id/viewPagerHome"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/pacakge"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:elevation="3dp"
+        android:overScrollMode="never"
+        android:shadowColor="#000000"
+        android:shadowDx="6"
+        android:shadowDy="-4"
+        android:shadowRadius="4"></info.androidhive.bottomnavigation.AutoScrollViewPager>
+
+    <LinearLayout
+        android:id="@+id/pager_dots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewPagerHome"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pager_dots"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/labTests"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="220dp"
+            android:background="@drawable/button_selector"
+            android:elevation="3dp"
+            android:padding="10dp"
+            android:text="Lab Tests"
+            android:textSize="15sp"
+            android:translationZ="2dp" />
+
+        <Button
+            android:id="@+id/radTests"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_selector"
+            android:elevation="3dp"
+            android:padding="10dp"
+            android:text="Radiology Tests"
+            android:textSize="15sp"
+            android:translationZ="2dp" />
+
+        <Button
+            android:id="@+id/oDTests"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/labTests"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="220dp"
+            android:background="@drawable/button_selector"
+            android:elevation="3dp"
+            android:padding="10dp"
+            android:text="Other Tests"
+            android:textSize="15sp"
+            android:translationZ="2dp" />
+
+        <Button
+            android:id="@+id/advTests"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/radTests"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_selector"
+            android:elevation="3dp"
+            android:padding="10dp"
+            android:text="Packages"
+            android:textSize="15sp"
+            android:translationZ="2dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

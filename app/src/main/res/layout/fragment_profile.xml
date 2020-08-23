@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.bottomnavigation.fragment.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        // a frame layout for the image
+
+
+        <FrameLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:id="@+id/photo_layout"
+            android:layout_gravity="center_horizontal" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/outside_img"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:src="@drawable/profile"
+                android:scaleType="centerCrop" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/camera_photo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/camera"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="128dp"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"/>
+
+        </FrameLayout>
+
+        // linear layout for listview
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="55dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/list">
+                </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
